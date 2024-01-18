@@ -41,7 +41,9 @@
 如果只有QtCreator的话，可以安装pyqt5-tools，然后在工具目录找到，例如可以是
 
 ```
+D:\ProgramData\Anaconda3\Library\bin\designer.exe
 D:\ProgramData\Anaconda3\envs\py3-10\Lib\site-packages\qt5_applications\Qt\bin\designer.exe
+F:\Python\python3.6.3\Lib\site-packages\pyqt5_tools\designer.exe
 ```
 
 pip安装
