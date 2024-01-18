@@ -88,6 +88,20 @@ Program 为你电脑里Python路径下的`\Scripts\pyuic5.exe`，例如我这里
 C:\Users\12420\AppData\Local\Programs\Python\Python37\Scripts\pyuic5.exe
 ```
 
+注：若没有该工具需要安装pyqt5
+
+```
+pip install pyqt5-tools
+```
+
+若安装时报错：error: Microsoft Visual C++ 14.0 or greater is required.
+需要安装Visual C++ 或者使用Conda添加环境
+
+```
+conda install libpython m2w64-toolchain -c msys2
+```
+
+
 Arguments 这里设置成这个命令，表示将当前文件转化成py文件，使用该工具时会自动执行该命令，在这里就是将QT Designer生成的`.ui`文件转化为`.py`文件
 
 ```
