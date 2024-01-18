@@ -82,7 +82,7 @@ Working directory（工作目录）设为 `$FileDir$` 表示默认当前 PyCharm
 
 * 同理，我们再配置python自带的pyUIC工具。
 
-Program 为你电脑里Python路径下的`\Scripts\pyuic5.exe`，例如我这里是
+Program 为你电脑里Python路径下的`\Scripts\pyuic5.exe`，或者`pyuic5.bat`例如我这里是
 
 ```
 C:\Users\12420\AppData\Local\Programs\Python\Python37\Scripts\pyuic5.exe
