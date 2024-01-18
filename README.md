@@ -34,9 +34,29 @@
 
 #### 0x01 安装工具
 
-* 首先需要安装 PyCharm 和 QtDesigner，PyCharm 直接在官网上选择社区版就可以免费下载了， QtDesigner 也需要单独下载安装。若之前安装过 QtCreator，可能同时也安装了 QtDesigner，在windows搜索栏中搜索 Designer 即可找到该应用。
+* 首先需要安装 PyCharm 和 QtDesigner，PyCharm 直接在官网上选择社区版就可以免费下载了， QtDesigner 也需要单独下载安装。若之前安装过 QtCreator，可能同时也安装了 QtDesigner，在windows搜索栏中搜索 Designer 即可找到该应用。(一般都有安装)
 
 <img src=".\pyqt.assets\image-20230703102854607.png" alt="image-20230703102854607" style="zoom:80%;" />
+
+如果只有QtCreator的话，可以安装pyqt5-tools，然后在工具目录找到，例如可以是
+
+```
+D:\ProgramData\Anaconda3\envs\py3-10\Lib\site-packages\qt5_applications\Qt\bin\designer.exe
+```
+
+pip安装
+
+```
+pip install pyqt5-tools
+```
+
+若安装时报错：error: Microsoft Visual C++ 14.0 or greater is required.
+
+需要安装Visual C++ 或者使用Conda添加环境
+
+```
+conda install libpython m2w64-toolchain -c msys2
+```
 
 * 为了方便后续配置，选择两次打开文件位置，找到最终的应用程序路径。
 
@@ -87,20 +107,6 @@ Program 为你电脑里Python路径下的`\Scripts\pyuic5.exe`，或者`pyuic5.b
 ```
 C:\Users\12420\AppData\Local\Programs\Python\Python37\Scripts\pyuic5.exe
 ```
-
-注：若没有该工具需要安装pyqt5
-
-```
-pip install pyqt5-tools
-```
-
-若安装时报错：error: Microsoft Visual C++ 14.0 or greater is required.
-需要安装Visual C++ 或者使用Conda添加环境
-
-```
-conda install libpython m2w64-toolchain -c msys2
-```
-
 
 Arguments 这里设置成这个命令，表示将当前文件转化成py文件，使用该工具时会自动执行该命令，在这里就是将QT Designer生成的`.ui`文件转化为`.py`文件
 
